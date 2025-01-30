@@ -1,0 +1,66 @@
+.logo {
+    height: 40px;
+    width: auto;
+    margin-left: 15px;
+  }
+  .logo:hover {
+    transition: transform 0.3s;
+    transform: scale(1.02);
+  }
+  .navbar {
+    position: absolute;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.938);
+    z-index: 1;
+  }
+  .navbar a {
+    color: #714ce2;
+    font-weight: 700;
+    font-size: 1.1em;
+  }
+  
+  .navbar .nav-links ul {
+    display: flex;
+  }
+  .navbar .nav-links ul li {
+    margin: 10px;
+  }
+  .navbar .nav-links ul li.active a {
+    color: #e1d4f4;
+    font-weight: 800;
+  }
+  .nav-links ul li a:hover {
+    color: #e1d4f4;
+    transition: color 0.2s;
+  }
+  /* INFOS UTILES
+   POUR LES TITRES
+   lato-black {
+      font-family: "Lato", serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    POUR LES SOUS TITRES
+    lato-bold {
+      font-family: "Lato", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+     POUR LES PARAGRAPHES
+    lato-regular { 
+      font-family: "Lato", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+  jaune #eec356
+  violet #714ce2
+  lila #e1d4f4
+  violet foncé #382d6b
+  corner radius 8px */

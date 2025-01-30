@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services</title>
+    <link rel="stylesheet" href="styles/nosservices.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="imgnavbar/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="imgnavbar/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="imgnavbar/contact.png" alt="check-box">
+
+                <button class="button1" onclick="location.href='contact.html'">Nous contacter</button>
+                <img  id="connexion-icon" class="navicons" src="imgnavbar/iconconnexion.png" alt="check-box">
+                <button class="button2" onclick="location.href='connexion.html'">Connexion</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="index.html"><span><img class="icon" src="imgnavbar/home.png" />Accueil </span></a></li>
+                <li><a href="Nosservices.html"> <span> <img class="icon" src="imgnavbar/service.png" /> Nos services</span></a></li>
+                <li><a href="avis-client.html"> <span> <img class="icon" src="imgnavbar/avis.png" />Avis Clients</span></a></li>
+                <li><a href="nous-recrutons.html"> <span> <img class="icon" src="imgnavbar/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="portfolio.html"> <span> <img class="icon" src="imgnavbar/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="qui-sommes-nous.html"> <span> <img class="icon" src="imgnavbar/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="pourquoi-nous.html"> <span> <img class="icon" src="imgnavbar/whyus.png" />Pourquoi Nous? </span></a></li>
+                <li><a href="quizz.html"> <span> <img  id="quizz" class="icon" src="imgnavbar/quizzicon.png" />Quizz </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu dÃ©roulant -->
+        </div>
+        <!-- fin du menu dÃ©roulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+
+<h1>Nos Services</h1>
+
+<div class="container">
+
+
+<div class="photo_service1">
+<img src="/images/lettre-demission.png" alt="">    
+</div>
+
+<div class="texte_service1">
+    <p>Comment démissionner ?<br />
+        Nous vous enseignons l’art subtil de la démission élégante (ou spectaculaire). Du courrier de démission parfait au moment idéal pour tout quitter,
+        nous avons tout ce qu’il vous faut pour faire de votre départ un événement inoubliable.
+    </p>
+</div>
+
+<div class="photo_service2">
+    <img src="/images/manette.png" alt="">    
+</div>
+
+<div class="texte_service2">
+    <p>Formation multiple et inutile :<br />Pourquoi ne pas se démarquer en devenant expert en l'inutile ? Grâce à nos formations inédites multiples et inutiles, 
+       vous pouvez dire adieu à toute pression professionnelle et embrasser une vie de tranquillité… et de chômage parfaitement assumé.
+    </p>
+</div>
+
+<div class="photo_service3">
+    <img src="/images/nos-expertises.png" alt="">    
+</div>
+
+<div class="texte_service3">
+        <p>Notre expertise :<br />
+        Nos consultants ne se contentent pas de théoriser le chômage : ils l’ont vécu, exploré et perfectionné. Forts de leurs années
+        d’expérience en matière d'aider chaque individu à atteindre le chômage de manière rapide, efficace et stratégique.
+    </p>
+
+</div>
+
+</div>
+
+<footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Groupe1/logo OC.svg" alt="Logo Objectif Chomage">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.francetravail.fr/region/">En région</a>
+                <a href="https://www.francetravail.org/accueil/">Institutionnel</a>
+                <a href="https://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/">Mes évènements emploi</a>
+                <a href="https://dataemploi.francetravail.fr/emploi/accueil">Data Emploi</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="mention-legale.html">Mention légales</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footerp">&copy; 2025 Pôle Chômage - Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

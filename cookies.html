@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectif Chômage</title>
+    <link rel="stylesheet" href="styles/Groupe1.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="imgnavbar/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="imgnavbar/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="imgnavbar/contact.png" alt="check-box">
+
+                <button class="button1" onclick="location.href='contact.html'">Nous contacter</button>
+                <img  id="connexion-icon" class="navicons" src="imgnavbar/iconconnexion.png" alt="check-box">
+                <button class="button2" onclick="location.href='connexion.html'">Connexion</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="index.html"><span><img class="icon" src="imgnavbar/home.png" />Accueil </span></a></li>
+                
+                <li><a href="avis-client.html"> <span> <img class="icon" src="imgnavbar/avis.png" />Avis Clients</span></a></li>
+                <li><a href="nous-recrutons.html"> <span> <img class="icon" src="imgnavbar/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="portfolio.html"> <span> <img class="icon" src="imgnavbar/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="qui-sommes-nous.html"> <span> <img class="icon" src="imgnavbar/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="pourquoi-nous.html"> <span> <img class="icon" src="imgnavbar/whyus.png" />Pourquoi Nous? </span></a></li>
+                <li><a href="quizz.html"> <span> <img  id="quizz" class="icon" src="imgnavbar/quizzicon.png" />Quizz </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu dÃ©roulant -->
+        </div>
+        <!-- fin du menu dÃ©roulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+
+    <main class="Groupe1">
+        <section>
+            <h1>Politique de Cookies</h1>
+            <h2>1. Introduction</h2>
+            <p>
+                Cette politique explique comment Objectif Chômage utilise les cookies et autres technologies similaires lorsque vous visitez notre site.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Qu'est-ce qu'un cookie ?</h2>
+            <p>
+                Un cookie est un petit fichier texte stocké sur votre appareil (ordinateur, smartphone, tablette) lors de votre visite sur un site Web. Les cookies permettent de stocker des informations relatives à votre navigation.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Types de cookies que nous utilisons</h2>
+            <ul>
+                <li><strong>Cookies strictement nécessaires :</strong> Ces cookies sont indispensables au fonctionnement du site et ne peuvent être désactivés dans nos systèmes.</li>
+                <li><strong>Cookies de performance :</strong> Ces cookies collectent des informations sur la façon dont les visiteurs utilisent notre site, afin d'améliorer ses performances.</li>
+                <li><strong>Cookies fonctionnels :</strong> Ces cookies permettent au site de se souvenir de vos choix (par exemple, votre langue ou votre région) pour vous offrir une expérience personnalisée.</li>
+                <li><strong>Cookies de ciblage :</strong> Ces cookies sont utilisés pour afficher des publicités pertinentes pour vous.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Gestion des cookies</h2>
+            <p>
+                Vous pouvez gérer ou désactiver les cookies en modifiant les paramètres de votre navigateur. Notez que la suppression ou le blocage de certains cookies peut affecter la fonctionnalité de notre site.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Comment modifier vos préférences en matière de cookies ?</h2>
+            <p>
+                Lors de votre première visite sur notre site, un bandeau de consentement aux cookies apparaît. Vous pouvez accepter ou personnaliser vos préférences. Vous pouvez également modifier vos choix à tout moment en accédant à la section "Paramètres des cookies" sur notre site.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Durée de conservation des cookies</h2>
+            <p>
+                La durée de conservation des cookies varie en fonction de leur type. Les cookies de session sont supprimés lorsque vous fermez votre navigateur, tandis que les cookies persistants restent sur votre appareil jusqu'à leur expiration ou suppression manuelle.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Contact</h2>
+            <p>
+                Si vous avez des questions concernant cette politique de cookies, vous pouvez nous contacter :
+            </p>
+            <address>
+                <strong>Objectif Chômage</strong><br>
+                Email : <a href="mailto:contact@objectif-chomage.fr">contact@objectif-chomage.fr</a><br>
+                Téléphone : <a href="tel:+33123456789">01 23 45 67 89</a>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Groupe1/logo OC.svg" alt="Logo Objectif Chomage">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.francetravail.fr/region/">En région</a>
+                <a href="https://www.francetravail.org/accueil/">Institutionnel</a>
+                <a href="https://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/">Mes évènements emploi</a>
+                <a href="https://dataemploi.francetravail.fr/emploi/accueil">Data Emploi</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="mention-legale.html">Mention légales</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footerp">&copy; 2025 Pôle Chômage - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

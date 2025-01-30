@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>NAVBAR</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="image/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="image/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="image/contact.png" alt="check-box">
+
+                <button class="button1">Nous contacter</button>
+                <img class="navicons" src="image/checkbox.png" alt="check-box">
+                <button class="button2">Quizz</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+                <li><a href="#"><span><img class="icon" src="image/home.png" />Accueil </span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/service.png" /> Nos services 💀</span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/avis.png" />Avis Clients</span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="#"> <span> <img class="icon" src="image/whyus.png" />Pourquoi Nous? </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu déroulant -->
+        </div>
+        <!-- fin du menu déroulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectif Chômage</title>
+    <link rel="stylesheet" href="styles/Groupe1.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="imgnavbar/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="imgnavbar/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="imgnavbar/contact.png" alt="check-box">
+
+                <button class="button1" onclick="location.href='contact.html'">Nous contacter</button>
+                <img  id="connexion-icon" class="navicons" src="imgnavbar/iconconnexion.png" alt="check-box">
+                <button class="button2" onclick="location.href='connexion.html'">Connexion</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="index.html"><span><img class="icon" src="imgnavbar/home.png" />Accueil </span></a></li>
+                    <li><a href="avis-client.html"> <span> <img class="icon" src="imgnavbar/avis.png" />Avis Clients</span></a></li>
+                <li><a href="nous-recrutons.html"> <span> <img class="icon" src="imgnavbar/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="portfolio.html"> <span> <img class="icon" src="imgnavbar/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="qui-sommes-nous.html"> <span> <img class="icon" src="imgnavbar/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="pourquoi-nous.html"> <span> <img class="icon" src="imgnavbar/whyus.png" />Pourquoi Nous? </span></a></li>
+                <li><a href="quizz.html"> <span> <img  id="quizz" class="icon" src="imgnavbar/quizzicon.png" />Quizz </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu dÃ©roulant -->
+        </div>
+        <!-- fin du menu dÃ©roulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+
+    <main class="Groupe1">
+        <h1>Avis de nos utilisateurs</h1>
+        <section id="avis">
+            <article>
+                <img src="Groupe1/pdp2.png" alt="Photo de Jean Dupont">
+                <div class="avis-header">
+                    <h3 class="h3l">Jean Dupont</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                    <p>"Grâce à Objectif Chômage, j'ai enfin trouvé la paix dans l'oisiveté. Merci !"</p>
+                </div>
+            </article>
+            <article>
+                <img src="Groupe1/pdp1.png" alt="Photo de Marie Curieux">
+                <div class="avis-header">
+                    <h3 class="h3l">Marie Curieux</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <p>"Les formations proposées pour apprendre à se détendre sont excellentes."</p>
+            </article>
+            <article>
+                <img src="Groupe1/pdp4.png" alt="Photo de Thomas Toketchup">
+                <div class="avis-header">
+                    <h3 class="h3l">Thomas Toketchup</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                    <p>"Merci, grâce à vous je peux enfin profiter de mon temps pour développer mes passions"</p>
+                </div>
+            </article>
+            <article>
+                <img src="Groupe1/pdp5.png" alt="Photo de Alain Verse">
+                <div class="avis-header">
+                    <h3 class="h3l">Alain Verse</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                    <p>"Les outils et conseils m’ont permis de prendre du recul et de voir le chômage comme une opportunité."</p>
+                </div>
+            </article>
+            <article>
+                <img src="Groupe1/pdp6.png" alt="Photo de Vincent Times">
+                <div class="avis-header">
+                    <h3 class="h3l">Vincent Times</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                    <p>"Grâce à ce site, j’ai trouvé des astuces pour mieux gérer mon quotidien sans emploi."</p>
+                </div>
+            </article>
+            <article>
+                <img src="Groupe1/pdp12.jpg" alt="Photo de Yves Vapabien">
+                <div class="avis-header">
+                    <h3 class="h3l">Yves Vapabien</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                    <p>"Leur atelier ‘Soutien psychologique’ est vraiment top !"</p>
+                </div>
+            </article>
+            <article>
+                <img src="Groupe1/pdp13.jpg" alt="Photo de Emma Carena">
+                <div class="avis-header">
+                    <h3 class="h3l">Emma Carena</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                    <p>"J'étais complètement perdu après avoir été promu Adjoint , mais grâce à ce site, j'ai trouvé des moyens pour me stabiliser financièrement et mentalement"</p>
+                </div>
+            </article>
+
+
+            <article>
+                <img src="Groupe1/pdp22.jpg" alt="Photo de Emma Carena">
+                <div class="avis-header">
+                    <h3 class="h3l">Marc Assin</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                <p>"Septique au début, ce site m’a permis de comprendre qu’avoir un travail c’est une réelle perte de temps. Aujourd’hui je peux enfin profiter de ma famille."</p>
+            </article>
+
+            <article>
+                <img src="Groupe1/maan.jpg" alt="Photo de Omer Dalors">
+                <div class="avis-header">
+                    <h3 class="h3l">Omer Dalors</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                <p>"Vos solutions proposées pour être renvoyé sont vraiment pitouyables et médiocres! Un accompagnement de basse qualité. On m'avai promis une vie de paresse et de plaisir à la maison, efficacité garantie!! Où est mon chômage ?  JE SUIS EN PRISON DEPUIS 6 MOIS ET ON REFUSE DE MELAISER PARTIR!! Laiser moi sortir!!"</p>
+            </article>
+
+            <article>
+                <img src="Groupe1/spider.jpg" alt="Photo de Harry Cover">
+                <div class="avis-header">
+                    <h3 class="h3l">Harry Cover</h3>
+                    <div class="stars">
+                        <span>&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                        <span class="empty">&#9733;</span>
+                    </div>
+                </div>
+                <p>"Je m'attendais à un plan clair pour devenir un roi de l'inaction, mais finalement, je me sens juste désorganisé et encore plus actif qu'avant à force de réfléchir. Est-ce que la procrastination devient contre-productive ? Ce site me laisse un peu perplexe."</p>
+            </article>
+
+
+        </section>
+
+
+
+
+
+        <section id="videos">
+            <h3>Découvrez nos vidéos de nos clients</h3>
+            <video controls>
+                <source src="G1/Video2.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Groupe1/logo OC.svg" alt="Logo Objectif Chomage">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.francetravail.fr/region/">En région</a>
+                <a href="https://www.francetravail.org/accueil/">Institutionnel</a>
+                <a href="https://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/">Mes évènements emploi</a>
+                <a href="https://dataemploi.francetravail.fr/emploi/accueil">Data Emploi</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="mention-legale.html">Mention légales</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footerp">&copy; 2025 Pôle Chômage - Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

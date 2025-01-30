@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objectif Chômage</title>
+        <link rel="stylesheet" href="styles/Groupe1.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="imgnavbar/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="imgnavbar/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="imgnavbar/contact.png" alt="check-box">
+
+                <button class="button1" onclick="location.href='contact.html'">Nous contacter</button>
+                <img  id="connexion-icon" class="navicons" src="imgnavbar/iconconnexion.png" alt="check-box">
+                <button class="button2" onclick="location.href='connexion.html'">Connexion</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="index.html"><span><img class="icon" src="imgnavbar/home.png" />Accueil </span></a></li>>
+                <li><a href="avis-client.html"> <span> <img class="icon" src="imgnavbar/avis.png" />Avis Clients</span></a></li>
+                <li><a href="nous-recrutons.html"> <span> <img class="icon" src="imgnavbar/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="portfolio.html"> <span> <img class="icon" src="imgnavbar/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="qui-sommes-nous.html"> <span> <img class="icon" src="imgnavbar/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="pourquoi-nous.html"> <span> <img class="icon" src="imgnavbar/whyus.png" />Pourquoi Nous? </span></a></li>
+                <li><a href="quizz.html"> <span> <img  id="quizz" class="icon" src="imgnavbar/quizzicon.png" />Quizz </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu dÃ©roulant -->
+        </div>
+        <!-- fin du menu dÃ©roulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+    <main class="Groupe1">
+        <section>
+            <p>Bienvenue sur le site <strong>Objectif Chômage</strong>. La protection de vos données personnelles est une priorité pour nous. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données lorsque vous utilisez notre site.</p>
+        </section>
+    
+        <section>
+            <h2>1. Informations Collectées</h2>
+            <h3>1.1 Données fournies directement par l'utilisateur</h3>
+            <p>Lorsque vous interagissez avec notre site, nous pouvons collecter les informations suivantes :</p>
+            <ul>
+                <li><strong>Nom et prénom</strong></li>
+                <li><strong>Adresse e-mail</strong></li>
+                <li><strong>Numéro de téléphone</strong></li>
+                <li><strong>Informations de localisation</strong> (si pertinentes)</li>
+                <li><strong>Préférences de navigation</strong></li>
+            </ul>
+    
+            <h3>1.2 Données collectées automatiquement</h3>
+            <p>Lors de votre visite sur notre site, certaines données peuvent être collectées automatiquement, notamment :</p>
+            <ul>
+                <li>Adresse IP</li>
+                <li>Type de navigateur</li>
+                <li>Pages consultées</li>
+                <li>Durée de la session</li>
+                <li>Cookies et technologies similaires</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>2. Utilisation des Données</h2>
+            <p>Nous utilisons vos données pour :</p>
+            <ul>
+                <li>Améliorer votre expérience utilisateur sur le site</li>
+                <li>Fournir des services personnalisés</li>
+                <li>Gérer vos demandes et réclamations</li>
+                <li>Vous informer des nouveautés et des opportunités d’emploi</li>
+                <li>Assurer la sécurité de notre plateforme</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>3. Partage des Données</h2>
+            <p>Nous ne vendons ni ne louons vos données personnelles à des tiers. Toutefois, vos données peuvent être partagées avec :</p>
+            <ul>
+                <li>Des prestataires de services (exemple : hébergement, support technique)</li>
+                <li>Les autorités légales, si requis par la loi</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>4. Cookies et Technologies Similaires</h2>
+            <p>Notre site utilise des cookies pour :</p>
+            <ul>
+                <li>Suivre les statistiques de visite</li>
+                <li>Améliorer la navigation</li>
+                <li>Offrir des contenus adaptés à vos intérêts</li>
+            </ul>
+            <p>Vous pouvez désactiver les cookies à tout moment via les paramètres de votre navigateur.</p>
+        </section>
+    
+        <section>
+            <h2>5. Sécurité des Données</h2>
+            <p>Nous mettons en place des mesures techniques et organisationnelles pour protéger vos données contre l'accès non autorisé, la perte ou la destruction.</p>
+        </section>
+    
+        <section>
+            <h2>6. Vos Droits</h2>
+            <p>Conformément à la réglementation en vigueur, vous disposez des droits suivants :</p>
+            <ul>
+                <li><strong>Accès</strong> : consulter les données que nous possédons sur vous</li>
+                <li><strong>Rectification</strong> : corriger les données inexactes ou incomplètes</li>
+                <li><strong>Suppression</strong> : demander la suppression de vos données</li>
+                <li><strong>Opposition</strong> : refuser l’utilisation de vos données à certaines fins</li>
+            </ul>
+            <p>Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@objectif-chomage.fr">contact@objectif-chomage.fr</a></p>
+        </section>
+    
+        <section>
+            <h2>7. Modifications de la Politique de Confidentialité</h2>
+            <p>Cette politique peut être modifiée à tout moment. Nous vous encourageons à la consulter régulièrement.</p>
+            <p><strong>Dernière mise à jour :</strong> [DATE]</p>
+        </section>
+    
+        <section>
+            <h2>8. Contact</h2>
+            <p>Pour toute question ou demande concernant cette politique de confidentialité, contactez-nous :</p>
+            <address>
+                <strong>Objectif Chômage</strong><br>
+                Email : <a href="mailto:contact@objectif-chomage.fr">contact@objectif-chomage.fr</a><br>
+                Téléphone : <a href="tel:+33123456789">01 23 45 67 89</a>
+            </address>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Groupe1/logo OC.svg" alt="Logo Objectif Chomage">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.francetravail.fr/region/">En région</a>
+                <a href="https://www.francetravail.org/accueil/">Institutionnel</a>
+                <a href="https://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/">Mes évènements emploi</a>
+                <a href="https://dataemploi.francetravail.fr/emploi/accueil">Data Emploi</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                <a href="mention-legale.html">Mention légales</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footerp">&copy; 2025 Pôle Chômage - Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

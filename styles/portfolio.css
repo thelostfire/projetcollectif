@@ -1,0 +1,269 @@
+
+body {
+    background-size: cover;
+    background-color: #f3f3f3;
+}
+
+.mesTitres h1{
+    font-weight: 300;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "lato";
+}
+
+.descriptionportfolio{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #414042;
+
+}
+
+/* PORTFOLIO2 */
+
+.containerbanner {
+        height: 300px;
+        background-image: url("/assets/success.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+}
+
+.containerbanner h1 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-weight: 300;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
+.bannertxt {
+    font-size: 42px;
+    color: #003D7C;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.containerdesign{
+width: 90%;
+margin: auto;
+/* border: 3px solid #003D7C; */
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;
+background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+}
+
+.containerdesign img {
+    max-width: 210px;
+}
+
+.containertitle {
+    font-size: 27px;
+    color: #414042;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 1.1;
+}
+
+.containercontainer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    /* border-radius: 8px; */
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+
+/* SLIDER PORTFOLIO */
+
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.slider{
+    padding-top: 1rem;  
+    display: flex;
+    /* aspect-ratio: 16 / 8; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* border-radius: 8px; */
+    /* -webkit-overflow-scrolling: touch;  */
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+    
+    .slider img {
+        max-width: 300px;
+        max-height: 20em;
+       scroll-snap-align: start; 
+       object-fit: cover;
+       border-radius: 20px;
+    }
+
+    .slideimg {
+        margin-left: 5px;
+        margin-right: 5px;
+        white-space: nowrap;
+        animation: 10s slide infinite linear;
+    }
+
+    .slideimg2{
+        margin-left: 5px;
+        margin-right: 5px;
+        white-space: nowrap;
+        animation: 10s slideimg2 infinite linear;
+    }
+
+    .slider-nav{
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+
+    .slider-nav a:hover{
+        opacity: 1;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0)
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes slideimg2 {
+        from {
+            transform: translateX(-100%)
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  } 
+  
+.containerdesign img {
+    transition:transform 0.25s ease;
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+}
+
+.containerdesign img:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+footer {
+    background-color: #414042;
+    border-top: 1px solid #dcdcdc;
+    padding: 2rem 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+footer .footer-logo img {
+    height: 100px;
+    width: auto;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}

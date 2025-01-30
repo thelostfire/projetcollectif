@@ -1,0 +1,304 @@
+  * {
+    font-family: "Roboto", "Serif";
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  }
+
+  main {
+  z-index: 50;
+  background-color: #e5e9ec;
+  }
+
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    margin: 2% 15% 0 15%;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .cards-header {
+    margin-top: 5%;
+  }
+
+  .card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card-front {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+  }
+
+  .card-back {
+    background-color: #003d7c;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+
+  .cardimage {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .card > h3 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .card-back > h3 {
+    margin: 8px;
+  }
+
+  .card-back > q {
+    font-size: 0.8em;
+    font-style: italic;
+  }
+
+  .card-back > p {
+    font-size: 0.75em;
+    border-top: 1px dashed white;
+    padding-top: 1px;
+  }
+
+  .card-back > p, q, h3 {
+    margin: 5px;
+  }
+
+  .objchom {
+    background: linear-gradient(to right, rgb(200, 156, 13), white, rgb(200, 156, 13));
+    margin-inline: 150px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+    padding-inline: 20px;
+    font-weight: 600;
+    color: black;
+    -webkit-text-stroke: 0.1px #714ce2;
+    border-radius: 20px;
+  }
+  
+  .objchom2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #714ce2;
+  }
+  
+  .backgrey {
+    background: linear-gradient(white, yellow);
+    border-radius: 20px;
+    padding-inline: 10px;
+    font-weight: 550;
+  }
+
+  .quote{
+    margin: auto;
+    width: 100%;
+    border: solid #595d74 0.5px;  
+    padding: auto;
+    display: flex;
+    height: auto;
+    }
+
+  #imagie1{
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+  #titreQuiSommeNous {
+      position: absolute;
+      float: left;
+      color: whitesmoke;
+      margin-top: 150px;
+      margin-left: 30px;
+      font-size: 42px;
+      font-weight: 300;
+      @media only screen and (max-width: 1000px) {
+        margin-top: 80px;
+        font-size: 30px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 20px;
+      }
+      
+
+    }
+
+  .card-quote {
+    font-style: italic;
+  }
+
+  .author{
+    font-style: italic;
+    bottom: 20px;
+    font-size: small;
+    float: right;
+    line-height: 2;
+    text-shadow: 1.5px 1.5px 2px black;
+  }
+
+  h1 > q {
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .container{
+    display: flex; /* Active le modèle flexbox */
+    align-items: center; /* Centre verticalement (optionnel) */
+    gap: 10px;
+    height: 250px;
+    background-color:#fff;
+    margin: 5% 15% 0 15%;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+  }
+  
+  .h2lob{
+    margin-left: 15px;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      font-size: 0.8em;
+    }
+  }
+
+  .h2lob > h2 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #414042;
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+      font-size: 20px;
+    }
+  }
+
+
+
+  .imglob{
+  height: 100%;
+  width: 20%;
+  width: 300px;
+  }
+
+  .imglob > img {
+    height: 100%;
+  }
+
+ .team {
+  /*background-image: url(../images/avionpapier.webp);*/
+  float: center;
+  position: relative;
+  color: #414042;
+  text-align: center;
+  padding-bottom: 40px;
+ }
+
+ .contain-team {
+  background-color: #e5e9ec;
+ }
+
+ .cards-title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.1;
+ }
+
+ footer {
+  background-color: #414042;
+  border-top: 1px solid #dcdcdc;
+  padding: 2rem 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+footer .footer-logo img {
+  height: 100px;
+  width: auto;
+}
+
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid #dcdcdc;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
+}
+
+footer .footer-bottom p {
+  margin: 0;
+}

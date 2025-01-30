@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pourquoi-nous.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Pourquoi nous ?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav">
+                <img class="logo" src="imgnavbar/logo.png" alt="logo" />
+
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+                <p id="menu">Menu</p>
+
+
+                <!-- GIF header -->
+                <img class="gif-header" src="imgnavbar/gif_header.gif" alt="gif_header">
+            </div>
+            <div class="buttons">
+                <img class="navicons" src="imgnavbar/contact.png" alt="check-box">
+
+                <button class="button1" onclick="location.href='contact.html'">Nous contacter</button>
+                <img  id="connexion-icon" class="navicons" src="imgnavbar/iconconnexion.png" alt="check-box">
+                <button class="button2" onclick="location.href='connexion.html'">Connexion</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="index.html"><span><img class="icon" src="imgnavbar/home.png" />Accueil </span></a></li>
+                <li><a href="avis-client.html"> <span> <img class="icon" src="imgnavbar/avis.png" />Avis Clients</span></a></li>
+                <li><a href="nous-recrutons.html"> <span> <img class="icon" src="imgnavbar/recrut.png" />Nous Recrutons</span></a></li>
+                <li><a href="portfolio.html"> <span> <img class="icon" src="imgnavbar/portfolio.png" />Portfolio</span></a></li>
+                <li><a href="qui-sommes-nous.html"> <span> <img class="icon" src="imgnavbar/whoareus.png" />Qui Sommes Nous?</span></a></li>
+                <li><a href="pourquoi-nous.html"> <span> <img class="icon" src="imgnavbar/whyus.png" />Pourquoi Nous? </span></a></li>
+                <li><a href="quizz.html"> <span> <img  id="quizz" class="icon" src="imgnavbar/quizzicon.png" />Quizz </span></a></li>
+            </ul>
+        </div>
+
+
+        <div id="block-panel">
+        <!-- le menu dÃ©roulant -->
+        </div>
+        <!-- fin du menu dÃ©roulant -->
+    </main>
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        let blockPanel = document.getElementById("block-panel");
+
+        document.getElementById('openBtn').addEventListener('click', () => {
+            sidenav.classList.add("active");
+            blockPanel.style.display = ("block");
+            document.body.style.overflow = "hidden";
+            // console.log('haha');
+
+        })
+        closeBtn.onclick = closeNav;
+
+        function closeNav() {
+            sidenav.classList.remove("active");
+            blockPanel.style.display = "none";
+            document.body.style.overflow = "scroll";
+
+
+
+        }
+
+
+    </script>
+    <main>
+        <section class="objchom">
+            <img src="images/quisommesnous.jpg" alt="Qui Sommes Nous" id="quisommesnous">
+            <h1 class="h1pourquoinous">POURQUOI NOUS ?</h1>
+            <p id="main"><strong>Objectif chômage</strong> occupe une place unique au sein de l’écosystème de
+                l’activité française.
+                Beaucoup ont
+                tenté d’ajouter leur pierre au magnifique édifice du désemploiement français, pour au final ne laisser
+                que la crème de la crème: <strong>nous</strong>.</p>
+        </section>
+        <div class="main56">
+            <section>
+                <h2 class="h2quisommesnous"> Notre Philosophie </h2>
+                <p class="paragraphe"> Avouons le : qui rêve vraiment d’une épitaphe disant « Ici
+                    repose un salarié du mois » ? Non, merci. Ne pas travailler c’est pas de la paresse, c’est de
+                    l’efficacité : pourquoi s'épuiser pour un salaire qui part direct dans le loyer et les pâtes ?
+                    <br>Imaginez une vie où vos plus grandes responsabilités sont de choisir entre une sieste ou une
+                    soirée
+                    Netflix, et où le seul « stress » est de se demander si c'est l’heure de goûter. Et pour ceux qui
+                    diraient : « Mais que vas-tu faire de ta vie sans travail ? », la réponse est simple : tout ce que
+                    je
+                    veux, justement. <br> Travailler, c’est bien. Mais ne pas travailler… ça, c’est du génie.
+                </p><br>
+            </section>
+            <section>
+                <h2 class="h2quisommesnous">Nos Garanties</h2>
+                <p class="paragraphe">
+                    Du licenciement unique au licenciement massif, nous vous garantissons un
+                    réseau pour vous accompagner vers un retour à votre liberté.
+                </p><br>
+            </section>
+
+            <section class="paragraphe2">
+
+                <h2 class="h2quisommesnous">Nos Partenaires</h2>
+                <div id="partenaires">
+                    <article class="Dédé">
+                        <p class="objchom2">" Après avoir révolutionné la téléphonie mobile, on a suivi le brillant
+                            conseil
+                            d’Objectif Chômage : «
+                            Les smartphones ? Oubliez, misez tout sur les pellicules ! » Résultat ? On a testé
+                            l’effondrement
+                            <br>
+                            Spoiler : ça marche super bien. Merci du tuyau ! "
+                        </p><br>
+                        <img src="images/Logo-Kodak.png" alt="logo kodak" height="150">
+
+                    </article><br>
+
+                    <article class="Dédé">
+                        <p class="objchom2">" Merci à Objectif Chômage pour votre précieux partenariat : grâce à vos
+                            licenciements, nos points PMU
+                            n’ont jamais été aussi pleins "</p><br>
+                        <img src="images/LogoPmu.jpg" alt="LogoPmu" height="150">
+
+                    </article><br>
+
+                    <article class="Dédé">
+                        <p class="objchom2">" Un grand merci à Objectif Chômage pour votre aide précieuse dans notre
+                            effondrement
+                            spectaculaire.
+                            Grâce à vous, on est passé de leader des télécoms à experts en silence radio. "</p><br>
+                        <img src="images/Logo-Alcatel.png" alt="Logo-Alcatel" height="150">
+
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Groupe1/logo OC.svg" alt="Logo Objectif Chomage">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.francetravail.fr/region/">En region</a>
+                <a href="https://www.francetravail.org/accueil/">Institutionnel</a>
+                <a href="https://mesevenementsemploi.francetravail.fr/mes-evenements-emploi/">Mes evenements emploi</a>
+                <a href="https://dataemploi.francetravail.fr/emploi/accueil">Data Emploi</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="politique-confidentialite.html">Politique de confidentialite</a>
+                <a href="mention-legale.html">Mention legales</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footerp">&copy; 2025 Pole Chomage - Tous droits reserves.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+/* INFOS UTILES
+ *******H1********* 
+ 42 px,
+ roboto,
+  couleur blanc, 
+  front Weight 300, 
+  0 margin, 
+  text align center
+
+ *********H2**********
+ fontsize : 27 px
+weight : 500
+line-height : 1.1
+color : 414042
+
+*******H3*******
+font-size : 18px
+ weight : 400 
+ padding : 15px
+ margin_bottom : 10px
+ font_family : roboto
+ color : 414042
+ line-height : 1.1
+ 
+ ********p**********
+ margin-bottom : 9px
+  font-size : 14px 
+   line-height : 20px 
+   font-family : Roboto
+    weight : 400
+    color : 414042
+    
+  ******LINK******
+    bleu : 2e8e9c7
+
+  ******BOUTON********
+  #ff6359 Orange saumon 
+  #ff483e rouge si dégradé
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Roboto";
+  background-color: whitesmoke;
+}
+
+p {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #414042;
+}
+
+.mesTitres {
+  height: 300px;
+  background-image: url(/assetsquizz/banner_100.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.mesTitres h1 {
+  font-weight: 300;
+  color: white;
+  font-size: 42px;
+  text-align: center;
+}
+
+.mesSousTitres {
+  text-align: center;
+  justify-content: center;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #414042;
+}
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #414042;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  color: #414042;
+  line-height: 1.1;
+}
+.monQuizz {
+  margin: 10px;
+  margin-bottom: 35px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: white;
+  color: whitesmoke;
+  text-align: center;
+}
+.monQuizz .indexQuestion {
+  color: #414042;
+  text-align: center;
+  font-weight: 450;
+}
+
+.mesReponses {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+/* Définition de base pour la case */
+.choixReponse {
+  border: 2px solid #ff6359;
+  border-radius: 0px;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 55px;
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #ff6359;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer; /* Ici aussi pour la case entière */
+  font-size: 14px;
+}
+
+/* Stylisation du label pour l'interaction avec l'input caché */
+.choixReponse label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer; /* Ajout du pointeur ici aussi */
+  text-align: center;
+  display: flex; /* Utilisation du flexbox pour centrer le texte */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Masquage des inputs */
+.choixReponse input {
+  position: absolute; /* On cache l'input */
+  top: 0;
+  left: 0;
+  width: 100%; /* Prendre toute la largeur */
+  height: 100%; /* Prendre toute la hauteur */
+  opacity: 0; /* Le rendre invisible */
+  cursor: pointer; /* Assurez-vous que l'input est aussi cliquable */
+}
+
+/* Changement de forme au survol des cases reponses */
+.choixReponse:hover {
+  background-color: whitesmoke;
+  color: #414042;
+}
+
+/* Lors de la sélection */
+.choixReponse input:checked + label {
+  border: 2px solid white;
+}
+
+.divButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+#Button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #003d7c;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #003d7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  box-sizing: border-box;
+}
+
+#Button:hover {
+  color: #414042;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.result .coderesult p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #ff6359;
+}
+.result .descriptionresult p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+.result .conseilléresult p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.result {
+  background-color: whitesmoke;
+  border: 5px solid #ff6359;
+  display: none;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 1.4em;
+  font-weight: 900;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-bottom: 20px;
+}
