@@ -13,7 +13,7 @@ body {
 }
 
 .arriere-plan {
-  background-image: url("/images/pexels-silverkblack-22046204.jpg");
+  background-image: url("./images/pexels-silverkblack-22046204.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
